@@ -1,4 +1,4 @@
-from email.mime import image
+
 import numpy as np
 from keras.datasets import fashion_mnist
 
