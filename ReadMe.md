@@ -42,7 +42,7 @@ Backward Propagation Procedure:
 1. backwardprop() function of class FFNN is called which further calls output_layer.backward() and layers[].backward()
 2. output_layer.backprop is executed first which computes:
   i) the grad_a_Ltheta matrix that is gradient of L(theta) w.r.t output layer pre-activation matrix.This is used to calculate gradient of Ltheta w.r.t weights and biases separately.
-  ii)then, grad_a_Ltheta matrix is updated to gradient of L(theta) w.r.t last hidden layer pre-activation matrix and pots-activation matrix.
+  ii)then, grad_a_Ltheta matrix is updated to gradient of L(theta) w.r.t last hidden layer pre-activation matrix and post-activation matrix.
 3. layers[].backprop is executed next which computes:
   i) the updated grad_a_Ltheta is used to calculate gradient of Ltheta w.r.t weights and biases separately.
   ii)then, grad_a_Ltheta matrix is updated to gradient of L(theta) w.r.t (k-1)th [ where k iterates from=Last hidden layer to 1st hidden layer] hidden layer pre-activation matrix and post-activation matrix.
