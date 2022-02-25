@@ -24,7 +24,7 @@ How to use?
 How to change the number of layers used, the number of neurons in each layer and the type of activation function used in each layer?
 1. Depending on the layer to be added or removed call the add_hidden_layer function the required numbe of times from train.py in method run()
 2. If add_hidden_layer() is called twice from method run() in trin.py it implies two hidden layers will be added.
-3. add_hidden_layer(layer_1) here, layer_1  
+3. add_hidden_layer(layer_1) here, layer_1 is the number of neurons in the first layer.
 
 How to add a new optimisation algorithm to the existing code?
 
